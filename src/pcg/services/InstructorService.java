@@ -23,7 +23,7 @@ public class InstructorService {
 			System.out.println("\nWelcome to Intructor Menu\n");
             while(true)
             {
-            	System.out.println("========= Intructor Menu ==========\n");
+            	System.out.println("\n========= Intructor Menu ==========\n");
     			System.out.println("Enter 1 for Create Course");
     			System.out.println("Enter 2 for view all courses");
     			System.out.println("Enter 3 for Enroll student in course");

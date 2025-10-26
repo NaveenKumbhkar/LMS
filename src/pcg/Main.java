@@ -35,7 +35,7 @@ public class Main {
 				instructorService.instructorLogin(sc);
 				break;
 			case 4:
-				System.out.println("Thank you for visit. Come again....");
+				System.out.println("\nThank you for visiting. Please come again....");
 				sc.close();
 				System.exit(0);
 			default :
