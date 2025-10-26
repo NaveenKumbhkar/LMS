@@ -5,10 +5,12 @@ import pcg.services.*;
 
 
 public class Main {
-	public static void main(String args[])
+	StudentService studentService = new StudentService();
+	InstructorService instructorService = new InstructorService();
+	public void menuFun()
 	{
 		Scanner sc = new Scanner(System.in);
-		StudentService studentService = new StudentService();
+
 		do {
 			System.out.println();
 			System.out.println("============ Learning Managment System ==============");
@@ -29,9 +31,23 @@ public class Main {
 			case 2:
 				studentService.viewAllStudents();
 				break;
+			case 3:
+				instructorService.instructorLogin(sc);
+				break;
+			case 4:
+				System.out.println("Thank you for visit. Come again....");
+				sc.close();
+				System.exit(0);
+			default :
+				System.out.println("Please enter valid option");
 			}
 			
-		}while(true);
+		}while(true);		
+	}
+	public static void main(String args[])
+	{
+		Main m = new Main();
+        m.menuFun();
 	}
 
 }
